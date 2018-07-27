@@ -1,4 +1,4 @@
-# aws_account_billing
+# AWS Account Billing
 
 ## 目的
 AWSから恐ろしい金額が請求されては困るので，せめて毎日SlackにAWS料金を通知したいと思う．
