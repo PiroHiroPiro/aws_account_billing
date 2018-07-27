@@ -12,7 +12,8 @@ $ pip install lambda-uploader awscli
 $ aws configure
 $ git clone https://github.com/PiroHiroPiro/aws_account_billing.git
 $ cd aws_account_billing
-$ cp lambda.json.example lambda.json # 環境変数等を入力
+$ cp lambda.json.example ./src/lambda.json # 環境変数等を入力
+$ cd src
 $ lambda-uploader
 ```
 
