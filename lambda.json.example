@@ -9,6 +9,6 @@
   "variables"  :
     {
       "SLACK_POST_URL": "YOUR_SLACK_WEBHOOK_URL",
-      "SLACK_CHANNEL" : "YOUR_SLACK_CHANNEL"
+      "SLACK_CHANNEL" : "#YOUR_SLACK_CHANNEL"
     }
 }
