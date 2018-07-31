@@ -1,9 +1,6 @@
 # AWS Account Billing
 毎朝，AWSの料金をサービスごとにSlackに通知する．
 
-<img src="https://img.shields.io/github/license/mashape/apistatus.svg">
-
-こんな感じ
 <img width="504" alt="2018-07-31 20 46 36" src="https://user-images.githubusercontent.com/15605155/43458366-0035b202-9505-11e8-95f0-5934ac24f819.png">
 
 # Dependency
