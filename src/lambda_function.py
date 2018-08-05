@@ -20,7 +20,10 @@ service_list = []
 service_value = []
 
 def floatFormat(n):
-    return round(n * 100) / 100
+    try:
+        return round(n * 100) / 100
+    except:
+        return n
 
 def get_each_service_value(service_name):
     data = response.get_metric_statistics(
