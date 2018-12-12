@@ -41,8 +41,6 @@ cd src
 ```
 $ lambda-uploader
 ```
-9. LambdaでランタイムをPython3に変更する
-
 
 # Licence
 This software is released under the MIT License, see LICENSE.
