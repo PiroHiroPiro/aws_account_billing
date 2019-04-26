@@ -1,6 +1,6 @@
 # AWS Account Billing
 
-This is a bot that notifies AWS charges every morning.
+This is a bot that notifies AWS account billing every morning.
 
 <img width="504" alt="2018-07-31 20 46 36" src="https://user-images.githubusercontent.com/15605155/43458366-0035b202-9505-11e8-95f0-5934ac24f819.png">
 
