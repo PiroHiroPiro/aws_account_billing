@@ -3,10 +3,12 @@
 
 import json
 import datetime
-import requests
-import boto3
 import os
 import logging
+
+import requests
+import boto3
+
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -19,11 +21,13 @@ last_date = (datetime.date.today() -datetime.timedelta(1)).strftime('%Y/%m/%d')
 service_list = []
 service_value = []
 
+
 def floatFormat(n):
     try:
         return round(n * 100) / 100
     except:
         return n
+
 
 def get_each_service_value(service_name):
     data = response.get_metric_statistics(
@@ -48,6 +52,7 @@ def get_each_service_value(service_name):
     )
     for info in data['Datapoints']:
         return info['Maximum']
+
 
 def get_metric():
     get_metric_statistics = response.get_metric_statistics(
@@ -76,6 +81,7 @@ def get_metric():
 
     return total_value
 
+
 def build_message():
     total_value = get_metric()
     if float(total_value) >= 10.0:
@@ -103,6 +109,7 @@ def build_message():
         }
         attachment['fields'].append(service_item)
     return attachment
+
 
 def lambda_handler(event, context):
     content = build_message()
