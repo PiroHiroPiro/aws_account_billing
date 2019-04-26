@@ -11,28 +11,37 @@ This is a bot that notifies AWS charges every morning.
 
 # Install
 
-AWSでの準備は以下の参考サイトを参照．
+Setup AWS:
 
-1. リポジトリをクローンする
+refs(Japanese only)
+- [AWSの昨日までの各サービスの利用料金をSlackに通知させる](https://orebibou.com/2016/11/aws%E3%81%AE%E6%98%A8%E6%97%A5%E3%81%BE%E3%81%A7%E3%81%AE%E5%90%84%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91%E3%82%92slack%E3%81%AB%E9%80%9A%E7%9F%A5%E3%81%95/)
+- [AWSの請求を毎日Slackに通知させる](https://qiita.com/ishikun/items/90b766e5555421970e9f)
+- [LambdaでAWSの料金を毎日Slackに通知する（Python3）](https://qiita.com/isobecky74/items/88e8e0dcb0ee224a31e4)
+
+Clone repository:
+
 ```console
 $ git clone https://github.com/PiroHiroPiro/aws_account_billing.git
 $ cd aws_account_billing
 ```
 
-2. 必要なライブラリをインストールする
+Install libraries:
+
 ```console
 $ pipenv install
 $ pipenv shell
 ```
 
-3. 設定ファイルをコピーする
+Copy configuration file:
+
 ```console
 $ cp lambda.json.example ./src/lambda.json
 ```
 
-4. コピーした設定ファイル`lambda.json`にLambdaの関数名やロール,環境変数等を入力する
+Enter the Lambda function name, roles, environment variables, etc. in the copied configuration file `lambda.json`:
 
-5. Lambdaにアップロードする
+Upload to Lambda:
+
 ```console
 $ cd src
 $ lambda-uploader
@@ -45,8 +54,3 @@ This software is released under the MIT License, see [LICENSE](https://github.co
 ## Author
 
 [Hiroyuki Nishizawa](https://github.com/PiroHiroPiro)
-
-# References
-- [AWSの昨日までの各サービスの利用料金をSlackに通知させる](https://orebibou.com/2016/11/aws%E3%81%AE%E6%98%A8%E6%97%A5%E3%81%BE%E3%81%A7%E3%81%AE%E5%90%84%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E5%88%A9%E7%94%A8%E6%96%99%E9%87%91%E3%82%92slack%E3%81%AB%E9%80%9A%E7%9F%A5%E3%81%95/)
-- [AWSの請求を毎日Slackに通知させる](https://qiita.com/ishikun/items/90b766e5555421970e9f)
-- [LambdaでAWSの料金を毎日Slackに通知する（Python3）](https://qiita.com/isobecky74/items/88e8e0dcb0ee224a31e4)
